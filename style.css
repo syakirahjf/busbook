@@ -1,0 +1,163 @@
+body{
+  font: 16px/1.6em arial, helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #d4d4d4;
+}
+
+h1{
+  text-align: center;
+}
+
+h2,p{
+  text-align: center;
+}
+
+h4{
+  color: #ffffff;
+}
+
+.container{
+  text-align: center;
+  margin: auto;
+  color: #eaeaea;
+  background-color: #C53A81;
+  width: 65%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.container2{
+  text-align: center;
+  margin: auto;
+  color: #eaeaea;
+  background-color: #C53A81;
+  width: 70%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.container3{
+  text-align: center;
+  margin: auto;
+  color: #eaeaea;
+  background-color: #d4217d;
+  width: 70%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.leftbox{
+  float: left;
+  width: 65%;
+}
+
+.rightbox{
+  float: right;
+  width: 30%;
+  padding: 10px;
+}
+.box{
+  border-radius: 5px;
+  height: 20px;
+  border: 1px solid black;  
+  text-align: center;
+}
+
+.formcontainer{
+  padding: 5px;
+  background-color: rgb(97, 130, 21);
+}
+
+#btn, #bookbtn {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  width:100px;
+  height: 28px;
+  margin: center;
+  background-color: #23a462;
+}
+
+#btnn {
+  margin-right: 55%;
+  margin-bottom: 5%;
+  float: right;
+  width: 100px;
+  height: 28px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #23a462;
+}
+
+#btn1{
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  width:15%;
+  height: 28px;
+  margin: auto;
+  background-color: #23a462;
+}
+
+#btn2{
+  margin-top: -45px;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  float: right;
+  width: 100px;
+  height: 28px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #23a462;
+}
+
+.img_seating{
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+table,tr,td{
+    text-align: center;
+    text-align-last: auto;
+    table-layout: fixed;
+    width: 71%;
+    border-collapse: collapse;
+    border: 1px solid rgb(37, 34, 37);
+  }
+
+td{
+  background-color: rgb(150, 12, 56);
+  width: auto;
+}
+
+.title{
+  font-weight: bold;
+  background-color: #780842;
+}
+
+.logo_colour {
+	color: #fff4e6;
+}
+
+footer{
+  text-align: center;
+  color: #434343;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+            /* Height of the footer*/ 
+  height: 35px;
+  background: rgb(255, 255, 255);
+}
