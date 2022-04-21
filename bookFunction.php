@@ -1,5 +1,6 @@
 <!-- AMIRUL 1914119 -->
 
+<!-- session start to store infos to be used across multiple pages -->
 <?php session_start(); ?>
 
 <!DOCTYPE html>
