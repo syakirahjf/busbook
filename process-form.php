@@ -79,6 +79,7 @@
       <!-- button to payment page  -->
       <form action="payment.php" method= "post">
         <input id="btn1" type="submit" value="Pay Now">
+        <button onclick="window.print()">Print</button>
      </form> </center>
 </div>  
 
