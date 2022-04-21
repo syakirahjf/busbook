@@ -11,7 +11,7 @@
 </head>
 
 
-<body>
+<body style="background-color: #C53A81;">
 <?php
   include "minMaxDate.php";
   if(isset($_POST['submit'])){
@@ -20,8 +20,9 @@
     }
 ?>
 
-<h1>BUS SEAT RESERVATION SYSTEM FROM KUALA LUMPUR TO TERENGGANU</h1><br>
-<div class="container">		
+<h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
+<h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
+<div class="container" style="background-color: white; padding: 50px; color:black;">		
             <div class="leftbox">
                 <img class="img_seating" src="image\seating.png" alt="seating">
             </div> 
@@ -29,8 +30,8 @@
             <div class="rightbox">
                 <br>
                 <form action="bookFunction.php" method="post">
-				<h4>Please select date and time</h4>
-				
+				<h4 style="float:left; color:#FF904A">SELECT DATE AND TIME</h4>
+				<br/><br/><br/>
 				<label for="Date">Departure Date: </label>
 
                 <input class="box" type="date" id="bdate" name="bdate" min="<?php echo minDate();?>" max="<?php echo maxDate();?>" required>                    
@@ -40,7 +41,7 @@
 					<select class="box" name="btime" id="btime" required>
 					<option value="7.30AM">7.30AM</option>
 					<option value="8.30AM">8.30AM</option>
-                        		<option value="9.39AM">9.30AM</option>
+                     <option value="9.39AM">9.30AM</option>
 					<option value="10.30AM">10.30AM</option>
           				<option value="11.30AM">11.30AM</option>
           				<option value="12.30PM">12.30PM</option>
@@ -56,7 +57,9 @@
           				<option value="10.30PM">10.30PM</option>
         				</select>
 					
-				<h4>Select Seat</h4>
+				<br/>
+				<h4 style="float:left; color:#FF904A">SELECT SEAT</h4>
+				<br><br>
                 <label for="seat">Number:</label>
                     <select class="box" name="seatNum" id="seatNum">
                         <option value="1">1</option>
@@ -78,7 +81,7 @@
                         <option value="C">C-Double window seat</option>              
                         </select>
                     <br><br>
-                    <input id="bookbtn" type="submit" name="book" value="Check">
+                    <input id="bookbtn" type="submit" name="book" value="Check" style="background-color:#FF904A"; color:black;">
                 </form>
             </div>  
     </div>
