@@ -11,8 +11,9 @@
     <title>BusBook</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h1>BUS SEAT RESERVATION SYSTEM FROM KUALA LUMPUR TO TERENGGANU</h1>
+<body style="background-color: #C53A81;">
+<h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
+<h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
     <?php
 
         include "seatBookingClass.php";
@@ -49,14 +50,14 @@
         
     ?>
 
-    <div class="container2">		
+    <div class="container" style="background-color: white; padding: 50px; color:black;">	
             <div class="leftbox">
                 <img class="img_seating" src="image\seating.png" alt="seating">
             </div> 
 		<div class="rightbox">
-        <br>
+		<p style="font-weight:bold; color:#FF904A;">RESERVATION DETAILS</p>
 		<!-- SYAKIRAH 1818436 START -->
-		<label for="bdate">Departure Date: <?php echo formatDate($date);?></label>
+		<label for="bdate" style="">Departure Date: <?php echo formatDate($date);?></label>
         <br>
 		<label for="btime">Departure Time: <?php echo $_POST["btime"]?></label>
         <br>	<!-- SYAKIRAH 1818436 END -->
@@ -85,17 +86,16 @@
          if( $seatingStatus[$book1->getSeatNum()] == 1)
          {
               echo'<form action="index.php">
-                    <input id="btn" type="submit" value="Back">
+                    <input id="btn" type="submit" value="Back" style="background-color:#FF904A; color:white;">
                     </form>';    
          }
          else
          {
-            echo'<br> <form action="index.php">
-                    <input id="btnn" type="submit" value="Back">
-                    </form>';
-                    
-            echo'<form action="contact-form.php">
-                    <input id="btn2" type="submit" value="Proceed">
+            echo'<form action="index.php">
+                    <input id="btnn" type="submit" value="Back" style="background-color:#FF904A; color:white;">
+                    </form>
+					<form action="contact-form.php">
+                    <input id="btn2" type="submit" value="Proceed" style="background-color:#FF904A; color:white;">
                     </form>';
          }
         
