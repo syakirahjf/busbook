@@ -35,9 +35,11 @@
         $book1 = new seatBooking($seatRow, $seatType);
         $book1->setDescription($seatType);
         $book1->setPrice($seatType);
-
+	
+	<!-- SYAKIRAH 1818436 START -->
         $_SESSION['bdate']=$_POST['bdate'];
         $_SESSION['btime']=$_POST['btime'];
+	<!-- SYAKIRAH 1818436 END -->
         $_SESSION['seatNum']=$book1->getseatNum();
         $_SESSION['description']=$book1->getDescription();
         $_SESSION['price']=$book1->getPrice();
