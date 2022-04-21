@@ -1,6 +1,7 @@
 <!-- HIDAYU 1912604 -->
 
-<?php session_start(); ?> 
+<!--this is session to access the session info in bookFunction -->
+ <?php session_start(); ?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +15,8 @@
 <body style="background-color: #C53A81; padding-bottom: 100px;">
 <h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
 <h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
-   
+
+<!-- to call function formatDate() -->
 <?php include "dateFunction.php" ?>
 
 <div class="container" style="background-color: white; color:black;">	
