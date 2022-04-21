@@ -24,7 +24,7 @@ YUHANA 1812590 -->
 ?>
     <div class="container" style="background-color: white; padding: 50px; color:black;">
     <form action="process-form.php" method="post">
-		<h4 style="font-weight:bold; color:#FF904A;">Personal Details</h4>
+		<h4 style="font-weight:bold; color:#FF904A;">PERSONAL DETAILS</h4>
         <center><table>
 		<p>
 		<tr>
