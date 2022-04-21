@@ -19,7 +19,7 @@
 		$seatRow = $_POST["seatNum"];
         $seatType = $_POST["seatType"];
 
-        // NAJMI 1823617 Start
+        // NAJMI 1823617 START
         $seatingStatus = array("1A" => 1,"1B" => 0,"1C" => 1,
                       "2A" => 0,"2B" => 0,"2C" => 1, 
                       "3A" => 1,"3B" => 1,"3C" => 1,
@@ -30,7 +30,7 @@
                       "8A" => 0,"8B" => 1,"8C" => 1,
                       "9A" => 1,"9B" => 1,"9C" => 1,
                       "10A" => 1,"10B" => 1,"10C" => 1);// 1=booked, 0=available
-        //NAJMI 1823617 End
+        //NAJMI 1823617 END
 
         $book1 = new seatBooking($seatRow, $seatType);
         $book1->setDescription($seatType);
@@ -53,11 +53,11 @@
             </div> 
 		<div class="rightbox">
         <br>
-		<!-- Syakirah 1818436 Start -->
+		<!-- SYAKIRAH 1818436 START -->
 		<label for="bdate">Departure Date: <?php echo formatDate($date);?></label>
         <br>
 		<label for="btime">Departure Time: <?php echo $_POST["btime"]?></label>
-        <br>	<!-- Syakirah 1818436 End -->
+        <br>	<!-- SYAKIRAH 1818436 END -->
 		<label for="seatNum">Seat Number: <?php echo $book1->getSeatNum();?></label>
         <br>
         <label for="description">Seat Description: <?php echo $book1->getDescription();?></label>
