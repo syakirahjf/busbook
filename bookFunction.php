@@ -42,8 +42,9 @@
         $_SESSION['seatNum']=$book1->getseatNum();
         $_SESSION['description']=$book1->getDescription();
         $_SESSION['price']=$book1->getPrice();
-
+	
         $date = $_POST['bdate'];
+	//to call function formatDate()
         include "dateFunction.php";
         
     ?>
