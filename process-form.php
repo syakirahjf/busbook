@@ -11,65 +11,71 @@
     <title>BusBook</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <h1 id>Thank You</h1>
-    <p id>Here is the information you have submitted:</p>
+<body style="background-color: #C53A81;">
+<h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
+<h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
    
 <?php include "dateFunction.php" ?>
 
-<div class= 'container3'>
-    <center><table class= 'tablereceipt'>
+<div class="container" style="background-color: white; color:black;">	
+	<h2 style="color:#FF904A;">Thank You</h2>
+    <p>Here is the information you have submitted</p>
+    <center>
+	<table>
     <p>
      <tr>
-         <th id='title'>Subjects</th>
-         <th id='title'>Details</th>
+         <th id='title' style="background-color: white; color:#FF904A; border: 1px solid white; border-bottom: 1px solid black;">Subjects</th>
+         <th id='title' style="background-color: white; color:#FF904A; border: 1px solid white; border-bottom: 1px solid black;">Details</th>
      </tr>
     </p>
 
+	<tr>
+        <td style="background-color: white;">Ticket Id</td>
+        <td style="background-color: white;"><?php echo (rand(1000,1500));?></td>
+      </tr>
      <tr>
-        <td><strong>Name </strong></td>
-        <td><?php echo $_POST["name"]?></td>
+        <td style="background-color: white;">Name</td>
+        <td style="background-color: white;"><?php echo $_POST["name"]?></td>
       </tr>
     <tr>
-        <td><strong>Age </strong></td>
-        <td><?php echo $_POST["age"]?></td>
+        <td style="background-color: white;">Age</td>
+        <td style="background-color: white;"><?php echo $_POST["age"]?></td>
     </tr>
     <tr>
-        <td><strong>Phone Number </strong></td>
-        <td><?php echo $_POST["phone"]?></td>
+        <td style="background-color: white;">Phone Number</td>
+        <td style="background-color: white;"><?php echo $_POST["phone"]?></td>
     </tr>
     <tr>
-        <td><strong> Email </strong></td>
-        <td><?php echo $_POST["email"]?></td>
+        <td style="background-color: white;">Email</td>
+        <td style="background-color: white;"><?php echo $_POST["email"]?></td>
     </tr>
     <tr>
-        <td><strong>Departure Date </strong></td>
-        <td>
+        <td style="background-color: white;">Departure Date</td>
+        <td style="background-color: white;">
             <?php if(isset($_SESSION['bdate'])) echo formatDate($_SESSION['bdate']); ?> 
         </td>
     </tr>
     <tr>
-        <td><strong>Departure Time </strong></td>
-        <td>        
+        <td style="background-color: white;">Departure Time</td>
+        <td style="background-color: white;">        
             <?php if(isset($_SESSION['btime'])) echo $_SESSION['btime']; ?> 
         </td>
     </tr>
     <tr>
-        <td><strong> Seat Number </strong></td>
-        <td>
+        <td style="background-color: white;">Seat Number</td>
+        <td style="background-color: white;">
             <?php if(isset($_SESSION['seatNum'])) echo $_SESSION['seatNum']; ?>
         </td>
     </tr>
     <tr>
-        <td><strong> Seat Description </strong></td>
-        <td>
+        <td style="background-color: white;">Seat Description</td>
+        <td style="background-color: white;">
             <?php if(isset($_SESSION['description'])) echo $_SESSION['description']; ?> 
         </td>
     </tr>
     <tr>
-        <td><strong>Ticket Price</strong></td>
-        <td>
+        <td style="background-color: white;">Ticket Price</td>
+        <td style="background-color: white;">
             RM<?php if(isset($_SESSION['price'])) echo $_SESSION['price'];?> 
         </td>
     </tr>
@@ -78,9 +84,9 @@
 
       <!-- button to payment page  -->
       <form action="payment.php" method= "post">
-        <input id="btn1" type="submit" value="Pay Now">
+        <input id="btn1" type="submit" value="Pay Now" style="background-color:#FF904A; color:white;">
           <!-- SYAKIRAH 1818436 START-->
-        <button onclick="window.print()">Print</button>
+        <button id="btn1" onclick="window.print()" style="background-color:#FF904A; color:white;">Print</button>
           <!-- SYAKIRAH 1818436 END-->
      </form> </center>
 </div>  
