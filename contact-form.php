@@ -10,7 +10,9 @@ YUHANA 1812590 -->
     <title>BusBook</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #C53A81;">
+<h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
+<h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
 <?php
 
   if(isset($_POST['submit'])){
@@ -20,55 +22,50 @@ YUHANA 1812590 -->
 	$phone=$_POST["phone"];
   }
 ?>
-
-    <h1 id>Personal Details</h2>
-    <fieldset id="personalInfo">
-	<legend>Passenger Information</legend>
-    <div class="container2">
+    <div class="container" style="background-color: white; padding: 50px; color:black;">
     <form action="process-form.php" method="post">
+		<h4 style="font-weight:bold; color:#FF904A;">Personal Details</h4>
         <center><table>
 		<p>
 		<tr>
-            <td><label for="inputName">Name:</label></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="inputName" style="text-align:left;">Name:</label></td>
 			<!-- <td>:</td> -->
-            <td><input type="text" name="name" id="inputName" required></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="text" name="name" id="inputName" required></td>
 		</tr>
         </p>
 		
 		<p>
 		<tr>
-            <td><label for="AgeName"> Age: </label></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="AgeName"> Age: </label></td>
 			<!-- <td>:</td> -->
-            <td><input type="number" name="age" id="inputAge" size="2" maxlength="2" required></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="number" name="age" id="inputAge" size="2" maxlength="2" required></td>
 		</tr>
         </p>
 		
         <p>
 		<tr>
-            <td><label for="inputEmail">Email:</label></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" style=" padding-left: 104px;float: left;"for="inputEmail">Email:</label></td>
 			<!-- <td>:</td> -->
-            <td><input type="email" name="email" id="inputEmail" required></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="email" name="email" id="inputEmail" required></td>
 		</tr>
         </p>
 		
 		<p>
 		<tr>
-            <td><label for="phone">Phone Number:</label></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="phone">Phone Number:</label></td>
 			<!-- <td>:</td> -->
-            <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" id="inputPhone" placeholder= "012-XXXXXXX" maxlength = "12" required></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" id="inputPhone" placeholder= " 012-XXXXXXX" maxlength = "12" required></td>
         </tr>
 		</p>
 		</table><br>
        
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset"></center>
+        <input id="btn" type="submit" value="Submit" style="background-color:#FF904A; color:white;">
+        <input id="btn" type="reset" value="Reset" style="background-color:#FF904A; color:white;"></center>
     </form>
-
+	<br/>
     <form action="index.php" method= "post">
-         <input type="submit" value="Cancel">
+         <input id="btn" type="submit" value="Cancel" style="background-color:white; color:#FF904A;">
     </form>
-
-	</fieldset>
 </div>
 
 </body>
