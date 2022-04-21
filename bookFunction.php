@@ -38,6 +38,7 @@
         $book1->setDescription($seatType);
         $book1->setPrice($seatType);
 	
+	//session variables
         $_SESSION['bdate']=$_POST['bdate'];
         $_SESSION['btime']=$_POST['btime'];
         $_SESSION['seatNum']=$book1->getseatNum();
