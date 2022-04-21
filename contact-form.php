@@ -1,5 +1,4 @@
-<!-- SYAKIRAH 1818436
-YUHANA 1812590 -->
+<!-- YUHANA 1812590 -->
 
 <!DOCTYPE html>
 <html lang="en">
