@@ -6,3 +6,6 @@ Case Study Group 2
 3. Nurul Yuhana Natasha binti Yusri (1812590) - Customer details
 4. Nurhidayu binti Ishak (1912604) - Customer details output and payment
 5. Muhammad Najmi Saniy bin Mohd Nazul (1823617) - Seat availability
+
+Decription of the case study:
+The system is about bus seat reservation where the total seats readily available are 30 and arranges as three seats in a row with three different seat option which is  single seat, double aisle seat and double window seat. User can make one seat reservation at a time. However, seat that is already reserved cannot be book again.
