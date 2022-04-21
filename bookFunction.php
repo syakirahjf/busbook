@@ -57,7 +57,7 @@
 		<div class="rightbox">
 		<p style="font-weight:bold; color:#FF904A;">RESERVATION DETAILS</p>
 		<!-- SYAKIRAH 1818436 START -->
-		<label for="bdate" style="">Departure Date: <?php echo formatDate($date);?></label>
+		<label for="bdate">Departure Date: <?php echo formatDate($date);?></label>
         <br>
 		<label for="btime">Departure Time: <?php echo $_POST["btime"]?></label>
         <br>	<!-- SYAKIRAH 1818436 END -->
@@ -73,11 +73,11 @@
          <?php
          if( $seatingStatus[$book1->getSeatNum()] == 1)
          {
-              echo "Seat already booked";
+              echo "Seat is already booked";
          }
          else
          {
-              echo "Seat available";
+              echo "Seat is available";
          }
         ?> 
         <br><br>
@@ -91,12 +91,12 @@
          }
          else
          {
-            echo'<form action="index.php">
-                    <input id="btnn" type="submit" value="Back" style="background-color:#FF904A; color:white;">
-                    </form>
-					<form action="contact-form.php">
-                    <input id="btn2" type="submit" value="Proceed" style="background-color:#FF904A; color:white;">
-                    </form>';
+            echo'<form action="contact-form.php">
+					<input id="btn" type="submit" value="Proceed" style="background-color:#FF904A; color:white;">
+                </form>
+				<form action="index.php">
+                    <input id="btn" type="submit" value="Back" style="background-color:white; color:#FF904A;">
+                </form>';
          }
         
         ?>
