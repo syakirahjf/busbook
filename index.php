@@ -32,12 +32,12 @@
                 <form action="bookFunction.php" method="post">
 				<h4 style="float:left; color:#FF904A">SELECT DATE AND TIME</h4>
 				<br/><br/><br/>
-				<label for="Date">Departure Date: </label>
+				<label for="Date" style="float: left;">Departure Date: </label>
 
                 <input class="box" type="date" id="bdate" name="bdate" min="<?php echo minDate();?>" max="<?php echo maxDate();?>" required>                    
 				<br>
 
-				<label for="Time">Departure Time:</label>
+				<label for="Time" style="float: left;">Departure Time:</label>
 					<select class="box" name="btime" id="btime" required>
 					<option value="7.30AM">7.30AM</option>
 					<option value="8.30AM">8.30AM</option>
@@ -59,9 +59,9 @@
 					
 				<br/>
 				<h4 style="float:left; color:#FF904A">SELECT SEAT</h4>
-				<br><br>
-                <label for="seat">Number:</label>
-                    <select class="box" name="seatNum" id="seatNum">
+				<br><br><br>
+                <label for="seat" style="float: left;">Number:</label>
+                    <select class="box" name="seatNum" id="seatNum" style="width: 150px; text-align: center;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -74,7 +74,7 @@
                         <option value="10">10</option>
                     </select>
                     <br>
-                    <label for="seat">Seat type:</label>
+                    <label for="seat" style="float: left;">Seat type:</label>
                         <select class="box" name="seatType" id="seatType">
                         <option value="A">A-Single seat</option>
                         <option value="B">B-Double aisle seat</option>
