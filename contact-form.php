@@ -65,7 +65,7 @@ YUHANA 1812590 -->
     </form>
 
     <form action="index.php" method= "post">
-         <input type="submit" value="Cancel" float=left >
+         <input type="submit" value="Cancel">
     </form>
 
 	</fieldset>
