@@ -81,7 +81,7 @@
                         <option value="C">C-Double window seat</option>              
                         </select>
                     <br><br>
-                    <input id="bookbtn" type="submit" name="book" value="Check" style="background-color:#FF904A; color:black;">
+                    <input id="bookbtn" type="submit" name="book" value="Check" style="background-color:#FF904A; color:white;">
                 </form>
             </div>  
     </div>
