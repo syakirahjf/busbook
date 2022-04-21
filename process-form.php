@@ -79,7 +79,9 @@
       <!-- button to payment page  -->
       <form action="payment.php" method= "post">
         <input id="btn1" type="submit" value="Pay Now">
+          <!-- SYAKIRAH 1818436 START-->
         <button onclick="window.print()">Print</button>
+          <!-- SYAKIRAH 1818436 END-->
      </form> </center>
 </div>  
 
