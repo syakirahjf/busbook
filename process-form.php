@@ -11,7 +11,7 @@
     <title>BusBook</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #C53A81;">
+<body style="background-color: #C53A81; padding-bottom: 100px;">
 <h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
 <h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
    
