@@ -53,11 +53,11 @@
             </div> 
 		<div class="rightbox">
         <br>
-		
+		<!-- Syakirah 1818436 Start -->
 		<label for="bdate">Departure Date: <?php echo formatDate($date);?></label>
         <br>
 		<label for="btime">Departure Time: <?php echo $_POST["btime"]?></label>
-        <br>
+        <br>	<!-- Syakirah 1818436 End -->
 		<label for="seatNum">Seat Number: <?php echo $book1->getSeatNum();?></label>
         <br>
         <label for="description">Seat Description: <?php echo $book1->getDescription();?></label>
