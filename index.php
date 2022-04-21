@@ -30,28 +30,18 @@
                 <br>
                 <form action="bookFunction.php" method="post">
 				<h4>Please select date and time</h4>
-				<center>
-				<table>
-				<tr>
-				<td>
+				
 				<label for="Date">Departure Date: </label>
-				</td>
-				<td>
+
                 <input class="box" type="date" id="bdate" name="bdate" min="<?php echo minDate();?>" max="<?php echo maxDate();?>" required>                    
 				<br>
-				</td>
-				</tr>
-				
-				<tr>
-				<td>
+
 				<label for="Time">Departure Time:</label>
-				</td>
-				<td>
 					<select class="box" name="btime" id="btime" required>
-						<option value="7.30AM">7.30AM</option>
-						<option value="8.30AM">8.30AM</option>
-                        <option value="9.39AM">9.30AM</option>
-						<option value="10.30AM">10.30AM</option>
+					<option value="7.30AM">7.30AM</option>
+					<option value="8.30AM">8.30AM</option>
+                        		<option value="9.39AM">9.30AM</option>
+					<option value="10.30AM">10.30AM</option>
           				<option value="11.30AM">11.30AM</option>
           				<option value="12.30PM">12.30PM</option>
           				<option value="1.30PM">1.30PM</option>
@@ -64,11 +54,8 @@
           				<option value="8.30PM">8.30PM</option>
           				<option value="9.30PM">9.30PM</option>
           				<option value="10.30PM">10.30PM</option>
-        			</select>
-				</td>
-				</tr>
-				</table>
-				</center>
+        				</select>
+					
 				<h4>Select Seat</h4>
                 <label for="seat">Number:</label>
                     <select class="box" name="seatNum" id="seatNum">
