@@ -9,6 +9,8 @@
     <title>BusBook</title>
     <link rel="stylesheet" href="style.css">
 </head>
+	
+<!-- body start -->
 <body style="background-color: #C53A81;">
 <h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
 <h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
@@ -22,39 +24,39 @@
     $phone=$_POST["phone"];
   }
 ?>
-    <!-- passenger contact form -->
+    <!-- passenger form -->
     <div class="container" style="background-color: white; padding: 50px; color:black;">
     <form action="process-form.php" method="post">
 		<h4 style="font-weight:bold; color:#FF904A;">PERSONAL DETAILS</h4>
         <center><table>
 		<p>
 		<tr>
-            <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="inputName" style="text-align:left;">Name:</label></td>
 	    <!-- passenger name -->
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="inputName" style="text-align:left;">Name:</label></td>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="text" name="name" id="name" required></td>
 		</tr>
         </p>
 		
 		<p>
 		<tr>
-            <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="AgeName"> Age: </label></td>
 	    <!-- passenger age -->
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="AgeName"> Age: </label></td>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="number" name="age" id="age" size="2" maxlength="2" required></td>
 		</tr>
         </p>
 		
-        <p>
+        	<p>
 		<tr>
+	     <!-- passenger email -->
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" style=" padding-left: 104px;float: left;"for="inputEmail">Email:</label></td>
-	    <!-- passenger email -->
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="email" name="email" id="email" required></td>
 		</tr>
         </p>
 		
 		<p>
 		<tr>
+	    <!-- passenger phone number. Passenger can input phone number based on required pattern and length -->
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="phone">Phone Number:</label></td>
-	    <!-- passenger phone number -->
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" id="inputPhone" placeholder= " 012-XXXXXXX" maxlength = "12" required></td>
         </tr>
 		</p>
@@ -69,9 +71,14 @@
     <form action="index.php" method= "post">
          <input id="btn" type="submit" value="Cancel" style="background-color:white; color:#FF904A;">
     </form>
+    <!-- passenger form end -->
 </div>
-
 </body>
+<!-- body end -->
+
+<!-- footer start -->
 <footer id="footer">Group 2  INFO 3305 Case Study</footer>
+<!-- footer end -->
+	
 </html>
 
