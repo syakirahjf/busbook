@@ -17,7 +17,10 @@
 <h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
 
 <!-- to call function formatDate() -->
-<?php include "dateFunction.php" ?>
+<?php 
+	include "dateFunction.php";
+	$_SESSION['name']=$_POST['name'];
+?>
 
 <div class="container" style="background-color: white; color:black;">	
 	<h2 style="color:#FF904A;">Thank You</h2>
