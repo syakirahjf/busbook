@@ -7,7 +7,7 @@
 	$db = fopen("db.txt","a"); //open txt file
 	if(isset($_SESSION['seatNum'])){
 		$seatnumber= $_SESSION['seatNum']; //assign booking seatnumber into a variable
-		fwrite($db,"\n$seatnumber"); //write booking seat number into txt file
+		fwrite($db,"$seatnumber"); //write booking seat number into txt file
 	}
 	fclose($db); //close txt file
 	//SYAKIRAH 1818436 END
