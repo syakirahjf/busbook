@@ -59,24 +59,29 @@
 
         <!--NAJMI 1823617 & SYAKIRAH 1818436 Start-->
          <?php
-		 $db = fopen("db.txt","a");
-		 $seatnumber = $book1->getSeatNum();	 
-		 $database = [];
+		 $db = fopen("db.txt","a"); //open txt file
+		 $seatnumber = $book1->getSeatNum();//assign seat number into the variable
 		 echo "<pre>"; // Enables display of line feeds
-		 $database = file_get_contents("db.txt");
+		 $database = file_get_contents("db.txt");//assign txt file into string
 		 echo "</pre>"; // Terminates pre tag
-		 fclose($db);
+		 fclose($db); //close txt file
+		 //compare content in database and seat number. if equal, the seat is already booked. if not, otherwise
 		 if (str_contains($database, $seatnumber)) { 
-			echo '<p style="margin-top: -18px; color: red;">Status: Seat is already booked</p>';
+			 //display booked
+			echo '<p style="margin-top: -18px; color: red;">Status: Seat is already booked</p>'; 
+			 //display button to home page
 			echo'<form action="index.php">
                     <input id="btn" type="submit" value="Back" style="background-color:#FF904A; color:white;">
                 </form>';
 		}
 		else{
+			//display avaialble
 			echo '<p style="margin-top: -18px; color: green;">Status: Seat is available</p>';
+			//display proceed button
 			echo '<form action="contact-form.php">
 						<input id="btn" type="submit" value="Proceed" style="background-color:#FF904A; color:white;">
 				</form>';
+			//display button to home page
 			echo'<form action="index.php">
                     <input id="btn" type="submit" value="Back" style="background-color:white; color:#FF904A;">
                 </form>';
