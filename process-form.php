@@ -1,6 +1,6 @@
 <!-- HIDAYU 1912604 -->
 
-<!--this is session to access the session info in bookFunction -->
+<!--this is session to access the session info in bookFunction.php -->
  <?php session_start(); ?> 
 
 <!DOCTYPE html>
@@ -33,7 +33,10 @@
          <th id='title' style="background-color: white; color:#FF904A; border: 1px solid white; border-bottom: 1px solid black;">Details</th>
      </tr>
     </p>
-
+	
+	<!-- Data for Name, Age, Phone number and email are received from contact-form.php
+        code: rand() function is used to generate 4 random integers for the Ticket ID -->
+		
 	<tr>
         <td style="background-color: white;">Ticket Id</td>
         <td style="background-color: white;"><?php echo (rand(1000,1500));?></td>
@@ -54,6 +57,12 @@
         <td style="background-color: white;">Email</td>
         <td style="background-color: white;"><?php echo $_POST["email"]?></td>
     </tr>
+		
+	<!-- The data for date, time, seat number, description and ticket price are received from 
+         session variables that has been stored in the bookFunction.php 
+         code: echo $_SESSION['variable'] is used to get the stored info
+               isset() function is used to check whether the variable has been declared and is not NULL-->
+   
     <tr>
         <td style="background-color: white;">Departure Date</td>
         <td style="background-color: white;">
