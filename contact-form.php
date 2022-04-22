@@ -15,9 +15,9 @@
 <?php
 
   if(isset($_POST['submit'])){
-    $name=$_POST["inputName"];
-    $age=$_POST["inputAge"];
-	$email=$_POST["inputEmail"];
+    $name=$_POST["name"];
+    $age=$_POST["age"];
+	$email=$_POST["email"];
 	$phone=$_POST["phone"];
   }
 ?>
@@ -29,7 +29,7 @@
 		<tr>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="inputName" style="text-align:left;">Name:</label></td>
 			<!-- <td>:</td> -->
-            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="text" name="name" id="inputName" required></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="text" name="name" id="name" required></td>
 		</tr>
         </p>
 		
@@ -37,7 +37,7 @@
 		<tr>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="AgeName"> Age: </label></td>
 			<!-- <td>:</td> -->
-            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="number" name="age" id="inputAge" size="2" maxlength="2" required></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="number" name="age" id="age" size="2" maxlength="2" required></td>
 		</tr>
         </p>
 		
@@ -45,7 +45,7 @@
 		<tr>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" style=" padding-left: 104px;float: left;"for="inputEmail">Email:</label></td>
 			<!-- <td>:</td> -->
-            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="email" name="email" id="inputEmail" required></td>
+            <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="email" name="email" id="email" required></td>
 		</tr>
         </p>
 		
