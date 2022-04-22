@@ -80,7 +80,22 @@
                         <option value="B">B-Double aisle seat</option>
                         <option value="C">C-Double window seat</option>              
                         </select>
-                    <br><br>
+				
+				<!-- SYAKIRAH 1914119 Start-->
+				<h4 style="float:left; color:#FF904A">VIEW UNAVAILABLE SEAT</h4>
+				<center><table><tr><td style="float: center; background-color: white; border: 0px solid white;">
+					<?php
+					//view storage file
+					$db = fopen("db.txt","r"); //open txt file
+					echo "<pre>"; // Enables display of line feeds
+					$database = file_get_contents("db.txt"); //make txt file into string
+					echo "</pre>"; // Terminates pre tag
+					fclose($db);//close txt file
+					echo $database;//view content in storage file
+					?>
+				</td></tr></table></center>
+				<!-- SYAKIRAH 1914119 End-->
+				<br/>
                     <input id="bookbtn" type="submit" name="book" value="Check" style="background-color:#FF904A; color:white;">
                 </form>
             </div>  
