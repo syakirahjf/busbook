@@ -1,6 +1,7 @@
 <!--SYAKIRAH 1818436-->
 <!DOCTYPE html>
 
+<!--this is session to access the session info in process-form.php -->
 <?php session_start();
 	//SYAKIRAH 1818436
 	//update storage in txt file
@@ -31,9 +32,10 @@
 	<!--body start-->
 	<div class="container" style="background-color: white; color:black;">	
 		<h2 style="color:#FF904A;">Your booking is received!</h2>
-		<!-- YUHANA 1812590 -->
+		<!-- start YUHANA 1812590 -->
 		<!-- retrieve passenger name -->
 			<p style="text-align: left; padding: 0px 50px 0px 50px">Hi, <?php if(isset($_SESSION['name'])) echo $_SESSION['name']; ?><br/>
+			<!-- end Yuhana 1812590 -->
 				Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:<br/>
 
 				Bank Transfer Instructions<br/><br/>
