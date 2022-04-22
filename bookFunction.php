@@ -21,19 +21,6 @@
 		$seatRow = $_POST["seatNum"];
         $seatType = $_POST["seatType"];
 
-        // NAJMI 1823617 START
-        $seatingStatus = array("1A" => 1,"1B" => 0,"1C" => 1,
-                      "2A" => 0,"2B" => 0,"2C" => 1, 
-                      "3A" => 1,"3B" => 1,"3C" => 1,
-                      "4A" => 0,"4B" => 1,"4C" => 0,
-                      "5A" => 0,"5B" => 1,"5C" => 1,
-                      "6A" => 0,"6B" => 1,"6C" => 0,
-                      "7A" => 0,"7B" => 0,"7C" => 1,
-                      "8A" => 0,"8B" => 1,"8C" => 1,
-                      "9A" => 1,"9B" => 1,"9C" => 1,
-                      "10A" => 1,"10B" => 1,"10C" => 1);// 1=booked, 0=available
-        //NAJMI 1823617 END
-
         $book1 = new seatBooking($seatRow, $seatType);
         $book1->setDescription($seatType);
         $book1->setPrice($seatType);
@@ -69,40 +56,32 @@
         <label for="price">Ticket price: RM<?php echo $book1->getPrice();?></label>
         <br>
 
-        <!--NAJMI 1823617 Start-->
-        Status:
+        <!--NAJMI 1823617 & SYAKIRAH 1818436 Start-->
          <?php
-         if( $seatingStatus[$book1->getSeatNum()] == 1)
-         {
-              echo "Seat is already booked";
-         }
-         else
-         {
-              echo "Seat is available";
-         }
-        ?> 
-        <br><br>
-
-        <?php
-         if( $seatingStatus[$book1->getSeatNum()] == 1)
-         {
-              echo'<form action="index.php">
+		 $db = fopen("db.txt","a");
+		 $seatnumber = $book1->getSeatNum();	 
+		 $database = [];
+		 echo "<pre>"; // Enables display of line feeds
+		 $database = file_get_contents("db.txt");
+		 echo "</pre>"; // Terminates pre tag
+		 fclose($db);
+		 if (str_contains($database, $seatnumber)) { 
+			echo '<p style="margin-top: -18px; color: red;">Status: Seat is already booked</p>';
+			echo'<form action="index.php">
                     <input id="btn" type="submit" value="Back" style="background-color:#FF904A; color:white;">
-                    </form>';    
-         }
-         else
-         {
-            echo'<form action="contact-form.php">
-					<input id="btn" type="submit" value="Proceed" style="background-color:#FF904A; color:white;">
-                </form>
-				<form action="index.php">
+                </form>';
+		}
+		else{
+			echo '<p style="margin-top: -18px; color: green;">Status: Seat is available</p>';
+			echo '<form action="contact-form.php">
+						<input id="btn" type="submit" value="Proceed" style="background-color:#FF904A; color:white;">
+				</form>';
+			echo'<form action="index.php">
                     <input id="btn" type="submit" value="Back" style="background-color:white; color:#FF904A;">
                 </form>';
-         }
-        
-        ?>
-        <br>
-        <!--NAJMI 1823617 End-->
+		}		
+        ?> 
+		<!--NAJMI 1823617 & SYAKIRAH 1818436 End-->
 		</div>
 	</div>
 
