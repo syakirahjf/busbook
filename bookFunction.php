@@ -1,6 +1,6 @@
 <!-- AMIRUL 1914119 -->
 
-<!-- session start to store infos to be used across multiple pages -->
+<!-- session start to store and pass infos to be used across multiple pages -->
 <?php session_start(); ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,8 @@
         $book1->setDescription($seatType);
         $book1->setPrice($seatType);
 	
-	//session variables
+	//PHP $_SESSION is an associative array that contains all session variables
+   	//$_SESSION['variable'] is used to store info 
         $_SESSION['bdate']=$_POST['bdate'];
         $_SESSION['btime']=$_POST['btime'];
         $_SESSION['seatNum']=$book1->getseatNum();
