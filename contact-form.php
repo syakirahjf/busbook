@@ -12,6 +12,8 @@
 <body style="background-color: #C53A81;">
 <h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
 <h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
+
+<!-- hold data name, age, email and phone after user entered button submit-->	
 <?php
   if(isset($_POST['submit'])){
     $name=$_POST["name"];
@@ -20,6 +22,7 @@
     $phone=$_POST["phone"];
   }
 ?>
+    <!-- passenger contact form -->
     <div class="container" style="background-color: white; padding: 50px; color:black;">
     <form action="process-form.php" method="post">
 		<h4 style="font-weight:bold; color:#FF904A;">PERSONAL DETAILS</h4>
@@ -27,7 +30,7 @@
 		<p>
 		<tr>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="inputName" style="text-align:left;">Name:</label></td>
-			<!-- <td>:</td> -->
+	    <!-- passenger name -->
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="text" name="name" id="name" required></td>
 		</tr>
         </p>
@@ -35,7 +38,7 @@
 		<p>
 		<tr>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="AgeName"> Age: </label></td>
-			<!-- <td>:</td> -->
+	    <!-- passenger age -->
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="number" name="age" id="age" size="2" maxlength="2" required></td>
 		</tr>
         </p>
@@ -43,7 +46,7 @@
         <p>
 		<tr>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" style=" padding-left: 104px;float: left;"for="inputEmail">Email:</label></td>
-			<!-- <td>:</td> -->
+	    <!-- passenger email -->
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="email" name="email" id="email" required></td>
 		</tr>
         </p>
@@ -51,7 +54,7 @@
 		<p>
 		<tr>
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><label style=" padding-left: 104px;float: left;" for="phone">Phone Number:</label></td>
-			<!-- <td>:</td> -->
+	    <!-- passenger phone number -->
             <td style="padding: 10px; background-color: white; border: 1px solid white;"><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" id="inputPhone" placeholder= " 012-XXXXXXX" maxlength = "12" required></td>
         </tr>
 		</p>
