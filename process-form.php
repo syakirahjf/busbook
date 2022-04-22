@@ -35,9 +35,8 @@
     </p>
 	
 	<!-- Data for Name, Age, Phone number and email are received from contact-form.php
-        code: rand() function is used to generate 4 random integers for the Ticket ID -->
-		
-	<tr>
+        code: rand() function is used to generate 4 random integers for the Ticket ID -->	
+     <tr>
         <td style="background-color: white;">Ticket Id</td>
         <td style="background-color: white;"><?php echo (rand(1000,1500));?></td>
       </tr>
@@ -62,7 +61,6 @@
          session variables that has been stored in the bookFunction.php 
          code: echo $_SESSION['variable'] is used to get the stored info
                isset() function is used to check whether the variable has been declared and is not NULL-->
-   
     <tr>
         <td style="background-color: white;">Departure Date</td>
         <td style="background-color: white;">
@@ -99,12 +97,13 @@
       <!-- button to payment page  -->
       <form action="payment.php" method= "post">
         <input id="btn1" type="submit" value="Pay Now" style="background-color:#FF904A; color:white;">
+	      
           <!-- SYAKIRAH 1818436 START-->
         <button id="btn1" onclick="window.print()" style="background-color:#FF904A; color:white;">Print</button>
           <!-- SYAKIRAH 1818436 END-->
      </form> </center>
-</div>  
-
+</div> 
+	
 </body>
 <footer id="footer">Group 2  INFO 3305 Case Study</footer>
 </html>
