@@ -12,6 +12,14 @@
 <body style="background-color: #C53A81;">
 <h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
 <h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
+<?php
+  if(isset($_POST['submit'])){
+    $name=$_POST["name"];
+    $age=$_POST["age"];
+    $email=$_POST["email"];
+    $phone=$_POST["phone"];
+  }
+?>
     <div class="container" style="background-color: white; padding: 50px; color:black;">
     <form action="process-form.php" method="post">
 		<h4 style="font-weight:bold; color:#FF904A;">PERSONAL DETAILS</h4>
