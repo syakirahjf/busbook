@@ -19,7 +19,7 @@
 	<!--body start-->
 	<div class="container" style="background-color: white; color:black;">	
 		<h2 style="color:#FF904A;">Your booking is received!</h2>
-			<p style="text-align: left; padding: 0px 50px 0px 50px">Hi,<br/>
+			<p style="text-align: left; padding: 0px 50px 0px 50px">Hi, <?php if(isset($_SESSION['name'])) echo $_SESSION['name']; ?><br/>
 				Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:<br/>
 
 				Bank Transfer Instructions<br/><br/>
