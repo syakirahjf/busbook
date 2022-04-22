@@ -59,11 +59,13 @@
         </tr>
 		</p>
 		</table><br>
-       
+        <!-- Submit button -->
         <input id="btn" type="submit" value="Submit" style="background-color:#FF904A; color:white;">
+	<!-- Reset button-->
         <input id="btn" type="reset" value="Reset" style="background-color:#FF904A; color:white;"></center>
     </form>
 	<br/>
+    <!-- Cancel button will go index.php -->
     <form action="index.php" method= "post">
          <input id="btn" type="submit" value="Cancel" style="background-color:white; color:#FF904A;">
     </form>
