@@ -17,6 +17,7 @@
 <h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
 
 <!-- to call function formatDate() -->
+<!-- pass name data to payment.php -->
 <?php 
 	include "dateFunction.php";
 	$_SESSION['name']=$_POST['name'];
