@@ -47,15 +47,16 @@
 		<p style="font-weight:bold; color:#FF904A;">RESERVATION DETAILS</p>
 		<!-- SYAKIRAH 1818436 START -->
 		<label for="bdate">Departure Date: <?php echo formatDate($date);?></label>
-        <br>
+        	<br>
 		<label for="btime">Departure Time: <?php echo $_POST["btime"]?></label>
-        <br>	<!-- SYAKIRAH 1818436 END -->
+        	<br>
+		<!-- SYAKIRAH 1818436 END -->
 		<label for="seatNum">Seat Number: <?php echo $book1->getSeatNum();?></label>
-        <br>
-        <label for="description">Seat Description: <?php echo $book1->getDescription();?></label>
-        <br>
-        <label for="price">Ticket price: RM<?php echo $book1->getPrice();?></label>
-        <br>
+        	<br>
+        	<label for="description">Seat Description: <?php echo $book1->getDescription();?></label>
+        	<br>
+        	<label for="price">Ticket price: RM<?php echo $book1->getPrice();?></label>
+        	<br>
 
         <!--NAJMI 1823617 & SYAKIRAH 1818436 Start-->
          <?php
@@ -79,7 +80,7 @@
 			echo '<p style="margin-top: -18px; color: green;">Status: Seat is available</p>';
 			//display proceed button
 			echo '<form action="contact-form.php">
-						<input id="btn" type="submit" value="Proceed" style="background-color:#FF904A; color:white;">
+				<input id="btn" type="submit" value="Proceed" style="background-color:#FF904A; color:white;">
 				</form>';
 			//display button to home page
 			echo'<form action="index.php">
