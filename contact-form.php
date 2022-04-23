@@ -15,7 +15,7 @@
 <h1 style="color:white; padding-top:50px;">BUS SEAT RESERVATION SYSTEM</h1>
 <h2 style="color:white;">FROM KUALA LUMPUR TO TERENGGANU</h2>
 
-<!-- hold data name, age, email and phone after user entered button submit-->	
+<!-- declare data name, age, email and phone after user entered button submit-->	
 <?php
   if(isset($_POST['submit'])){
     $name=$_POST["name"];
