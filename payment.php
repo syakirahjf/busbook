@@ -3,7 +3,6 @@
 
 <!--this is session to access the session info in process-form.php -->
 <?php session_start();
-	//SYAKIRAH 1818436
 	//update storage in txt file
 	$db = fopen("db.txt","a"); //open txt file
 	if(isset($_SESSION['seatNum'])){
@@ -11,7 +10,6 @@
 		fwrite($db,"\n$seatnumber"); //write booking seat number into txt file
 	}
 	fclose($db); //close txt file
-	//SYAKIRAH 1818436 END
 ?> 
 
 <html lang="en">
