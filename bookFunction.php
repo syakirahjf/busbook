@@ -18,7 +18,9 @@
     <?php
 
         include "seatBookingClass.php";
-		$seatRow = $_POST["seatNum"];
+	include "dateFunction.php"; //to call function formatDate()
+	
+	$seatRow = $_POST["seatNum"];
         $seatType = $_POST["seatType"];
 
         $book1 = new seatBooking($seatRow, $seatType);
@@ -32,11 +34,8 @@
         $_SESSION['seatNum']=$book1->getseatNum();
         $_SESSION['description']=$book1->getDescription();
         $_SESSION['price']=$book1->getPrice();
-	
         $date = $_POST['bdate'];
-	//to call function formatDate()
-        include "dateFunction.php";
-        
+	
     ?>
 
     <div class="container" style="background-color: white; padding: 50px; color:black;">	
