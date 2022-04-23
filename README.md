@@ -1,7 +1,7 @@
 # busbook
 
 Case Study Group 2
-1. Muhammad Amirul bin Mohd Ali (1914119) - GUI, booking, date and time
+1. Muhammad Amirul bin Mohd Ali (1914119) - GUI, booking, class, object, date and time
 2. Jamilah Syakirah binti Ja'afar (1818436) - GUI, storage, file, payment, editor and error matters
 3. Nurul Yuhana Natasha binti Yusri (1812590) - Customer details input form
 4. Nurhidayu binti Ishak (1912604) - Customer and booking details, output and payment
