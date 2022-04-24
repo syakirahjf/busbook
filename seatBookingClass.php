@@ -1,4 +1,6 @@
 <!-- AMIRUL 1914119 -->
+<!-- class created for the reservation. After user filled in the input from the main page,
+some of the values from the input will be used to create new object from this class -->
 
 <?php
 class SeatBooking
