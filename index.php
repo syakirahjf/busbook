@@ -81,7 +81,7 @@
                         <option value="C">C-Double window seat</option>              
                         </select>
 				
-				<!-- SYAKIRAH 1914119 Start-->
+				<!-- SYAKIRAH 1818436 Start-->
 				<h4 style="float:left; color:#FF904A">VIEW UNAVAILABLE SEAT</h4>
 				<center><table><tr><td style="float: center; background-color: white; border: 0px solid white;">
 					<?php
@@ -94,7 +94,7 @@
 					echo $database;//view content in storage file
 					?>
 				</td></tr></table></center>
-				<!-- SYAKIRAH 1914119 End-->
+				<!-- SYAKIRAH 1818436 End-->
 				<br/>
                     <input id="bookbtn" type="submit" name="book" value="Check" style="background-color:#FF904A; color:white;">
                 </form>
